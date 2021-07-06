@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* --------------------------------------------------- */
+/* Requirements */
+/* --------------------------------------------------- */
+/*
+light orange: #e67e22
+dark orange: #d35400
+light blue: #3498db
+dark blue: #2980b9
+*/
+
+/* --------------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2980b9;
+  color: #000;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  font-size: 62.5%;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(img/octocat.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* FLEX CONTAINERS: in the same order with the HTML file elements with BEM methodology  */
+/* ------------------------------------------------------------------------------------ */
+.flex-container {
+  height: 400px;
+  width: 900px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.flex-container__user-infotmation {
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.76);
+  border-radius: 15px;
+  box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 1);
+  width: 65%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container__user-infotmation__up {
+  display: flex;
+  flex: 50%;
+}
+
+.flex-container__user-infotmation__up-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container__user-infotmation__up-left__img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container__user-infotmation__up-right {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container__user-infotmation__up-right__name {
+  white-space: pre-line; /* specifies how white-space inside an element is handled. */
+}
+
+.flex-container__user-infotmation__up-right__blog-address {
+  white-space: pre-line; /* specifies how white-space inside an element is handled. */
+}
+
+.flex-container__user-infotmation__up-right__user-address {
+  white-space: pre-line; /* specifies how white-space inside an element is handled. */
+}
+
+.flex-container__user-infotmation__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container__user-infotmation__bottom__error {
+  background-color: #3498db;
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  text-align: center;
+}
+
+.flex-container__user-infotmation__bottom__user-bio {
+  display: flex;
+  white-space: pre-line; /* specifies how white-space inside an element is handled. */
+}
+
+.flex-container__input-name {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.76);
+  border-radius: 15px;
+  box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 1);
+  width: 25%;
+  margin-left: 10%;
+  margin-right: 50px;
+}
+
+.flex-container__input-name__text-input {
+  height: 35px;
+}
+
+.flex-container__input-name__button {
+  margin-top: 20px;
+  width: 100px;
+  height: 25px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 200px;
+}
